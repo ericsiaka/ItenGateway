@@ -50,15 +50,15 @@ const App = () => {
       {/* Navbar sit on top */}
       <header className='w3-top'>
         <section className='w3-bar w3-white w3-card' id='mynavbar'>
-          <Link to='#home' className='w3-bar-item w3-button w3-wide'>
+          <a href='#home' className='w3-bar-item w3-button w3-wide'>
             <img src={logo} style={{ maxInlineSize: '45px' }} />
-          </Link>
+          </a>
           <nav className='w3-right w3-hide-small'>
-            <Link to='#about' className='w3-bar-item w3-button'><FcAbout /> ABOUT</Link>
-            <Link to='#team' className='w3-bar-item w3-button'><AiOutlineTeam /> TEAM</Link>
-            <Link to='#work' className='w3-bar-item w3-button'><BsFillMenuButtonFill /> WORK</Link>
-            <Link to='#pricing' className='w3-bar-item w3-button'><BsCurrencyDollar /> PRICING</Link>
-            <Link to="#contact" className='w3-bar-item w3-button'><MdEmail /> CONTACT</Link>
+            <a href='#about' className='w3-bar-item w3-button'>ABOUT</a>
+            <a href='#team' className='w3-bar-item w3-button'><AiOutlineTeam /> TEAM</a>
+            <a href='#work' className='w3-bar-item w3-button'><BsFillMenuButtonFill /> WORK</a>
+            <a href='#pricing' className='w3-bar-item w3-button'><BsCurrencyDollar /> PRICING</a>
+            <a href="#contact" className='w3-bar-item w3-button'><MdEmail /> CONTACT</a>
           </nav>
           {/*   
             Hide right-floated links on small screens and replace
@@ -73,11 +73,11 @@ const App = () => {
       {/* Sidebar on small screens when clicking the menu icon */}
       <nav className='w3-sidebar w3-bar-block w3-black w3-card w3-animate-left w3-hide-medium w3-hide-large' style={{ display: 'none' }} ref={sidebar} id='mySidebar'>
         <button type='button' className='w3-bar-item w3-button w3-large w3-padding-16'>Close &#10008;</button>
-        <Link to='#about' onClick={handleCloseMenu} className='w3-bar-item w3-button'><FcAbout /> ABOUT</Link>
-        <Link to='#team' onClick={handleCloseMenu} className='w3-bar-item w3-button'><AiOutlineTeam /> TEAM</Link>
-        <Link to='#work' onClick={handleCloseMenu} className='w3-bar-item w3-button'><BsFillMenuButtonFill /> WORK</Link>
-        <Link to='#pricing' onClick={handleCloseMenu} className='w3-bar-item w3-button'><BsCurrencyDollar /> PRICING</Link>
-        <Link to="#contact" onClick={handleCloseMenu} className='w3-bar-item w3-button'><MdEmail /> CONTACT</Link>
+        <a href='#about' onClick={handleCloseMenu} className='w3-bar-item w3-button'>ABOUT</a>
+        <a href='#team' onClick={handleCloseMenu} className='w3-bar-item w3-button'><AiOutlineTeam /> TEAM</a>
+        <a href='#work' onClick={handleCloseMenu} className='w3-bar-item w3-button'><BsFillMenuButtonFill /> WORK</a>
+        <a href='#pricing' onClick={handleCloseMenu} className='w3-bar-item w3-button'><BsCurrencyDollar /> PRICING</a>
+        <a href="#contact" onClick={handleCloseMenu} className='w3-bar-item w3-button'><MdEmail /> CONTACT</a>
       </nav>
 
       {/* Header with full-height image */}
@@ -137,7 +137,7 @@ const App = () => {
             <h3>We know design.</h3>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod<br />tempor incididunt ut labore et dolore.</p>
             <p>
-              <Link to='#work' className='w3-button w3-black'><BsFillMenuButtonFill /> View Our Works</Link>
+              <a href='#work' className='w3-button w3-black'><BsFillMenuButtonFill /> View Our Works</a>
             </p>
           </div>
           <div className='w3-col m6'>
@@ -381,7 +381,7 @@ const App = () => {
             </section>
             <section className='w3-section'>
               <button type='submit' className='w3-button w3-black'>
-                <RiSendPlaneFill />
+                <RiSendPlaneFill /> Send Message
               </button>
             </section>
           </form>
@@ -392,9 +392,9 @@ const App = () => {
 
       {/* Footer */}
       <footer className='w3-center w3-black w3-padding-64'>
-        <Link to='#home' className='w3-button w3-light'>
+        <a href='#home' className='w3-button w3-light'>
           <FaArrowUp className='w3-margin-right' /> To the top
-        </Link>
+        </a>
         <section className='w3-xlarge w3-section'>
           <BsFacebook />
           <AiOutlineInstagram />

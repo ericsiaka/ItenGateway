@@ -1,0 +1,17 @@
+body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", sans-serif}
+
+body, html {
+  line-height: 1.8;
+}
+
+.bgimg-1 {
+  background-position: center;
+  background-size: cover;
+  background-color: silver;
+  background-image: url("mac.jpg");
+  min-height: 100vh;
+}
+
+.w3-bar .w3-button {
+  padding: 1rem;
+}

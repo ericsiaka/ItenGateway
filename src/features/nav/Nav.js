@@ -1,32 +1,32 @@
-import { useRef } from 'react';
+import { useEffect } from 'react';
 import { AiOutlineTeam } from 'react-icons/ai';
 import { BsFillMenuButtonFill, BsCurrencyDollar } from 'react-icons/bs';
 import { MdEmail } from 'react-icons/md';
 import logo from './Logo.png'
+import { FiMenu } from 'react-icons/fi';
 
 const Nav = () => {
 
-  const sidebar = useRef(null);
-
   const handleOpenMenu = e => {
-    if (sidebar.current.style.display === 'block') {
-      sidebar.current.style.setProperty('display', 'none');
+    const sidebar = document.querySelector('#mySidebar');
+    if (sidebar.style.display === 'block') {
+      sidebar.style.setProperty('display', 'none');
     } else {
-      sidebar.current.style.setProperty('display', 'block');
+      sidebar.style.setProperty('display', 'block');
     }
   }
 
   const handleCloseMenu = e => {
-    sidebar.current.style.setProperty('display', 'none');
+    const sidebar = document.querySelector('#mySidebar');
+    sidebar.style.setProperty('display', 'none');
   }
-  
+
   return (
     <>
-      {/* Navbar sit on top */}
       <header className='w3-top'>
         <section className='w3-bar w3-white w3-card' id='mynavbar'>
           <a href='#home' className='w3-bar-item w3-button w3-wide'>
-            <img src={logo} style={{ maxInlineSize: '45px' }} />
+            <img src={logo} style={{ maxInlineSize: '44px' }} />
           </a>
           <nav className='w3-right w3-hide-small'>
             <a href='#about' className='w3-bar-item w3-button'>ABOUT</a>
@@ -40,14 +40,16 @@ const Nav = () => {
             them with a menu button
           */}
           <button type='button' onClick={handleOpenMenu} className='w3-bar-item w3-button w3-right w3-hide-large w3-hide-medium'>
-            Menu
+            <FiMenu />
           </button>
         </section>
       </header>
 
       {/* Sidebar on small screens when clicking the menu icon */}
-      <nav className='w3-sidebar w3-bar-block w3-black w3-card w3-animate-left w3-hide-medium w3-hide-large' style={{ display: 'none' }} ref={sidebar} id='mySidebar'>
-        <button type='button' className='w3-bar-item w3-button w3-large w3-padding-16'>Close &#10008;</button>
+      <nav className='w3-sidebar w3-bar-block w3-black w3-card w3-animate-left w3-hide-medium w3-hide-large' id='mySidebar' style={{ display: 'none', inlineSize: '250px' }}>
+        <button type='button' className='w3-bar-item w3-button w3-large w3-padding-16' onClick={handleCloseMenu}>
+          Close &#10008;
+        </button>
         <a href='#about' onClick={handleCloseMenu} className='w3-bar-item w3-button'>ABOUT</a>
         <a href='#team' onClick={handleCloseMenu} className='w3-bar-item w3-button'><AiOutlineTeam /> TEAM</a>
         <a href='#work' onClick={handleCloseMenu} className='w3-bar-item w3-button'><BsFillMenuButtonFill /> WORK</a>

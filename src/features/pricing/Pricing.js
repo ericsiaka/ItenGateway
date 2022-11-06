@@ -3,7 +3,7 @@ const Pricing = () => {
   return (
     <section className='w3-container w3-dark-grey' style={{ padding: '128px 16px' }} id='pricing'>
       <h3 className='w3-center'>PRICING</h3>
-      <p class="w3-large w3-center">Choose a pricing plan that fits your needs.</p>
+      <p className="w3-large w3-center">Choose a pricing plan that fits your needs.</p>
       <div className='w3-row-padding w3-stretch' style={{ marginBlockStart: '64px' }}>
         <div className='w3-third w3-section'>
           <ul className='w3-ul w3-white w3-hover-shadow'>

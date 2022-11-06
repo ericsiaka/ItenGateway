@@ -1,4 +1,3 @@
-import { useEffect } from 'react';
 import { AiOutlineTeam } from 'react-icons/ai';
 import { BsFillMenuButtonFill, BsCurrencyDollar } from 'react-icons/bs';
 import { MdEmail } from 'react-icons/md';

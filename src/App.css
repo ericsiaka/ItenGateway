@@ -4,14 +4,6 @@ body, html {
   line-height: 1.8;
 }
 
-.bgimg-1 {
-  background-position: center;
-  background-size: cover;
-  background-color: silver;
-  background-image: url("mac.jpg");
-  min-height: 100vh;
-}
-
 .w3-bar .w3-button {
   padding: 1rem;
 }

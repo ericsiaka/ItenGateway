@@ -1,0 +1,7 @@
+.bgimg-1 {
+  background-position: center;
+  background-size: cover;
+  background-color: silver;
+  background-image: url("mac.jpg");
+  min-height: 100vh;
+}

@@ -3,7 +3,6 @@
   z-index: 5;
 }
 
-
 .nav {
   height: 150px;
   background-color: white;
@@ -24,7 +23,7 @@
 }
 
 .active, .accordion:hover {
-  background-color: #ccc;
+  background-color: rgb(56, 52, 52);
 }
 
 .accordion:after {

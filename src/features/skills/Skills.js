@@ -50,6 +50,12 @@ const Skills = () => {
                 90%
               </div>
             </div>
+            <p className='w3-wide'><SiFirebase className='w3-margin-right w3-text-yellow' /> Figma</p>
+            <div className='w3-grey'>
+              <div className='w3-container w3-dark-grey w3-center' style={{ inlineSize: '90%' }}>
+                80%
+              </div>
+            </div>
           </div>
         </div>
       </section>

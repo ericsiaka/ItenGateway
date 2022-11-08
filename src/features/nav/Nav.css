@@ -1,0 +1,47 @@
+
+#mySidebar {
+  z-index: 5;
+}
+
+
+.nav {
+  height: 150px;
+  background-color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 1rem;
+}
+
+@media screen and (prefers-color-scheme: dark) {
+  .nav {
+    background-color: black;
+  }
+}
+
+.nav .logo {
+  max-inline-size: 120px;
+}
+
+.active, .accordion:hover {
+  background-color: #ccc;
+}
+
+.accordion:after {
+  content: '\002B';
+  color: #777;
+  font-weight: bold;
+  float: right;
+  margin-left: 5px;
+}
+
+.active:after {
+  content: "\2212";
+}
+
+.panel {
+  padding: 0 1rem;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+}

@@ -8,7 +8,7 @@ const Header = () => {
   return (
     <header className='w3-display-container w3-grayscale-min header' id='home'>
       <article className='w3-display-middleleft w3-text-white' style={{ padding: '48px' }}>
-        <span className="w3-large">CREATIVE MIND, CREATIVE WORKS</span><br />
+        <span className="w3-large">Bring your Dreams to Reality</span><br />
         <span className='w3-jumbo w3-hide-small'>We are <span className='w3-text-indigo'>Digital agence</span></span><br />
         <span className='w3-xxlarge w3-hide-large w3-hide-medium'>We are <span className='w3-text-indigo'>Digital agence</span></span><br />
         <p>

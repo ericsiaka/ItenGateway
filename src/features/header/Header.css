@@ -1,7 +1,16 @@
-.bgimg-1 {
+.header {
   background-position: center;
   background-size: cover;
   background-color: silver;
   background-image: url("mac.jpg");
-  min-height: 100vh;
+  min-height: calc(100vh - 150px);
+  min-block-size: cal(100vh - 150px);
+  margin-top: 150px;
+  margin-block-start: 150px;
+}
+
+@media screen and (prefers-color-scheme: dark) {
+  .header {
+    background-color: rgb(36, 35, 35);
+  }
 }

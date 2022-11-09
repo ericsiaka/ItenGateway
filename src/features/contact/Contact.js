@@ -34,18 +34,21 @@ const Contact = () => {
               <Form method='post'>
                 <section className='w3-section'>
                   <input type='text' className='w3-input w3-border' inputMode='text' enterKeyHint='next' id='name' name='name' value={formik.values.name} onChange={formik.handleChange} onBlur={formik.handleChange} autoComplete='name' placeholder='Name' />
+                  <span className='w3-text-red'>{formik.errors.name && formik.values.name ? `Error: ${formik.errors.name}` : ''}</span>
                 </section>
                 <section className='w3-section'>
                   <input type='email' className='w3-input w3-border' inputMode='email' enterKeyHint='next' id='email' name='email' value={formik.values.email} onChange={formik.handleChange} onBlur={formik.handleChange} autoComplete='email' placeholder='Email' />
+                  <span className='w3-text-red'>{formik.errors.email && formik.values.email ? `Error: ${formik.errors.email}` : ''}</span>
                 </section>
                 <section className='w3-section'>
                   <input type='text' className='w3-input w3-border' inputMode='text' enterKeyHint='next' id='subject' name='subject' value={formik.values.subject} onChange={formik.handleChange} onBlur={formik.handleChange} placeholder='Subject' />
+                  <span className='w3-text-red'>{formik.errors.subject && formik.values.subject ? `Error: ${formik.errors.subject}` : ''}</span>
                 </section>
                 <section className='w3-section'>
                   <textarea className='w3-input w3-border' inputMode='text' enterKeyHint='enter' id='message' rows='5' name='message' value={formik.values.message} onChange={formik.handleChange} placeholder='Message' style={{ resize: 'vertical' }} />
                 </section>
                 <section className='w3-section'>
-                  <button type='submit' className='w3-button w3-black w3-ripple w3-mobile'>
+                  <button type='submit' className='w3-button w3-black w3-padding-large w3-ripple w3-mobile'>
                     <RiSendPlaneFill /> Send Message
                   </button>
                 </section>
